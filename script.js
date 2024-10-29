@@ -29,6 +29,12 @@ list.addEventListener("click", (e) => {
         console.log(text);
         inputField.value = text; // Assuming inputField is defined in your scope
     }
+    else{
+        let p=document.createElement("p");
+        p.classList.add("options");
+        p.textContent=`Please enter full name of place and search`;
+        list.appendChild(p);
+    }
 })
 
 inputfield.addEventListener("input",(e)=>{
